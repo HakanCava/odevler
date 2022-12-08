@@ -1,0 +1,59 @@
+*{
+  /**resetleme*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{ /*! body'nin default olarak yuksekligi yoktur. */
+  /*?Tarayicinin gorunen alanin 100 % yuksekligi*/
+  font-family: "Raleway", sans-serif;
+
+}
+
+h1{
+  padding: 20px 0;
+  text-align: center;
+}
+
+form{
+  background-image: linear-gradient(0,rgba(0, 238, 255, 0.5),blue);
+  width: fit-content;
+margin: 20px;
+padding: 15px 10px;
+border-radius: 10px;
+
+}
+
+/** label inline elementtir. Dolayısıyla width property si dogrudan calismaz */
+
+label{
+  display: inline-block;
+  width:100px ;
+}
+
+.gender-div,.lang-div{
+  display: inline-block;
+}
+
+
+.gender-div label,.lang-div label{
+width: auto;
+margin-right: 10px;
+}
+
+.inputs{
+  border-radius: 5px;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0,0,0.3);
+}
+
+.radio-check{
+  margin-bottom: 2px;
+  /* margin-left: 20px; */
+}
+.btn-container{
+  text-align: center;
+}
