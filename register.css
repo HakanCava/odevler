@@ -7,21 +7,31 @@
 
 body{ /*! body'nin default olarak yuksekligi yoktur. */
   /*?Tarayicinin gorunen alanin 100 % yuksekligi*/
-  font-family: "Raleway", sans-serif;
+ text-align: center ;
+font-family: "Raleway", sans-serif;
+background-image: url('registerpage.jpg');
+background-size: contain;
+background-position: center center;
+
+
 
 }
 
 h1{
   padding: 20px 0;
   text-align: center;
+  color: green;
 }
 
 form{
-  background-image: linear-gradient(0,rgba(0, 238, 255, 0.5),blue);
+  display: inline-block;
+  /* text-align: center; */
+  background-image: linear-gradient(0,rgba(0, 238, 255, 0.5),rgba(0, 255, 34, 0.842));
   width: fit-content;
-margin: 20px;
-padding: 15px 10px;
-border-radius: 10px;
+  margin: 5px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  vertical-align: middle;
 
 }
 
@@ -29,12 +39,25 @@ border-radius: 10px;
 
 label{
   display: inline-block;
-  width:100px ;
+  text-align: left;
+  width:120px ;
 }
 
-.gender-div,.lang-div{
-  display: inline-block;
+.gender-div1 label{
+  padding: 5px 37px ;
+text-align: left;
 }
+
+.languages{
+  text-align: left;
+  padding: 5px 25px;
+}
+
+.gender-div2,.lang-div{
+  display: inline-block;
+  text-align: right;
+}
+
 
 
 .gender-div label,.lang-div label{
@@ -50,10 +73,33 @@ margin-right: 10px;
   border: 1px solid rgba(0, 0,0,0.3);
 }
 
-.radio-check{
+.radio-check {
   margin-bottom: 2px;
   /* margin-left: 20px; */
 }
 .btn-container{
   text-align: center;
 }
+
+.btn-container input{
+  width: 100px;
+  border-radius: 7px;
+  border: none;
+  background-color: hotpink;
+  padding: 5px;
+}
+.btn-container input:hover{
+  background-color: yellow;
+  color: red;
+  font-weight: 900;
+  cursor: pointer;
+}
+.textarea-div *{
+  vertical-align: middle;
+}
+
+/*? textarea'nin alanini buyultulebilmesini engelledik */
+textarea{
+  resize: none;
+}
+
