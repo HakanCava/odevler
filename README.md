@@ -1,0 +1,2 @@
+# odevler
+Burada yapılanlar odevlerim
